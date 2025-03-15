@@ -1,0 +1,18 @@
+stremlit
+pandas
+numpy
+numpy
+pandas
+streamlit
+matplotlib
+matplotlib.pyplot
+seaborn
+from wordcloud
+sklearn
+TfidfVectorizer
+sigmoid_kernel
+requests
+bs4
+BeautifulSoup
+re
+base64
