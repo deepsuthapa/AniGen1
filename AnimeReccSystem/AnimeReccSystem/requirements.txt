@@ -1,18 +1,2 @@
-stremlit
-pandas
-numpy
-numpy
-pandas
-streamlit
-matplotlib
-matplotlib.pyplot
-seaborn
-from wordcloud
-sklearn
-TfidfVectorizer
-sigmoid_kernel
-requests
-bs4
-BeautifulSoup
-re
-base64
+stremlit==1.39.0
+matplotlib==3.7.2
