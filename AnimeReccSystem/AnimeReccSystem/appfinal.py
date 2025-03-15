@@ -37,9 +37,8 @@ def set_background(image_file):
 
 # Load data and model
 def load_data():
-    anime = pd.read_csv("https://raw.githubusercontent.com/deepsuthapa/AniGen1/main/AnimeReccSystem/AnimeReccSystem/anime.csv
-").dropna()
-    ratings = pd.read_csv("https://github.com/deepsuthapa/AniGen1/blob/master/AnimeReccSystem/AnimeReccSystem/rating.csv").drop_duplicates()
+    anime = pd.read_csv("https://raw.githubusercontent.com/deepsuthapa/AniGen1/refs/heads/master/AnimeReccSystem/AnimeReccSystem/anime.csv").dropna()
+    ratings = pd.read_csv("https://raw.githubusercontent.com/deepsuthapa/AniGen1/refs/heads/master/AnimeReccSystem/AnimeReccSystem/rating.csv").drop_duplicates()
     final = pd.merge(anime, ratings, on="anime_id", suffixes=[None, "_user"])
     final = final.rename(columns={"rating_user": "user_rating"})
     return anime, final
