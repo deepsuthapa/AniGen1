@@ -101,7 +101,7 @@ def fetch_streaming_links(anime_name):
 def main():
     # Set the background image (provide the absolute path to your local image)
     set_background(
-        r"C:\Users\deeps\PycharmProjects\AnimeReccSystem\AnimeReccSystem\all_anime_in_one.jpg")  # Use raw string for Windows path
+        r"all_anime_in_one.jpg")  # Use raw string for Windows path
 
     # Custom title with larger font and different style
     st.markdown(
