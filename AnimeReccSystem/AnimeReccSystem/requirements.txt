@@ -1,2 +1,9 @@
-stremlit==1.25.0
-matplotlib==3.7.2
+numpy
+pandas
+streamlit
+matplotlib
+seaborn
+wordcloud
+scikit-learn
+requests
+beautifulsoup4
