@@ -101,7 +101,7 @@ def fetch_streaming_links(anime_name):
 def main():
     st.title("Anime Recommendation System")
     st.write("Welcome!!")
-    Set the background image (provide the absolute path to your local image)
+    # Set the background image (provide the absolute path to your local image)
     set_background(
         r"https://raw.githubusercontent.com/deepsuthapa/AniGen1/refs/heads/master/all_anime_in_one.jpg")  # Use raw string for Windows path
 
