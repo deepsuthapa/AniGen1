@@ -60,7 +60,7 @@ st.sidebar.title("Navigation")
 page = st.sidebar.radio("Go to", ["Home", "All Updates", "Search Manga", "Manga Reader", "Latest Chapters"])
 
 if page == "Home":
-    st.title("MangaDex Clone")
+    st.title("MangaUps")
     st.subheader("Latest Updates")
     latest_manga = get_latest_manga()
     
