@@ -7,7 +7,7 @@ CHAPTER_API_URL = "https://api.mangadex.org/manga/{}/feed"
 COVER_URL = "https://uploads.mangadex.org/covers"
 LATEST_UPDATES_API = "https://api.mangadex.org/chapter"
 
-st.set_page_config(page_title="MangaDex Clone", layout="wide")
+st.set_page_config(page_title="MangaUp", layout="wide")
 
 # Function to get latest manga updates
 def get_latest_manga(limit=10, search_query=None):
