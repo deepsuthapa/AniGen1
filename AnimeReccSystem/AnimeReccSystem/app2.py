@@ -98,9 +98,9 @@ def fetch_streaming_links(anime_name):
 
 # Main Streamlit App
 def main():
-    # Set the background image (provide the absolute path to your local image)
-    set_background(
-        r"https://raw.githubusercontent.com/deepsuthapa/AniGen1/refs/heads/master/AnimeReccSystem/AnimeReccSystem/all_anime_in_one.jpg")  # Use raw string for Windows path
+    # # Set the background image (provide the absolute path to your local image)
+    # set_background(
+    #     r"https://raw.githubusercontent.com/deepsuthapa/AniGen1/refs/heads/master/AnimeReccSystem/AnimeReccSystem/all_anime_in_one.jpg")  # Use raw string for Windows path
 
     # Custom title with larger font and different style
     st.markdown(
