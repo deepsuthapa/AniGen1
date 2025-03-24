@@ -18,26 +18,26 @@ def set_background(image_file):
         data = f.read()
     encoded_image = base64.b64encode(data).decode()
 
-    st.markdown(
-        f"""
-        <style>
-        .stApp {{
-            background-image: url("data:image/jpg;base64,{encoded_image}");
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-        }}
-        </style>
-        """,
-        unsafe_allow_html=True
-    )
+    # st.markdown(
+    #     f"""
+    #     <style>
+    #     .stApp {{
+    #         background-image: url("data:image/jpg;base64,{encoded_image}");
+    #         background-size: cover;
+    #         background-position: center;
+    #         background-repeat: no-repeat;
+    #         background-attachment: fixed;
+    #     }}
+    #     </style>
+    #     """,
+    #     unsafe_allow_html=True
+    # )
 
 
 # Load data and model
 def load_data():
-    anime = pd.read_csv("anime.csv").dropna()
-    ratings = pd.read_csv("rating.csv").drop_duplicates()
+    anime = pd.read_csv("https://raw.githubusercontent.com/deepsuthapa/AniGen1/refs/heads/master/AnimeReccSystem/AnimeReccSystem/all_anime_in_one.jpg").dropna()
+    ratings = pd.read_csv("https://raw.githubusercontent.com/deepsuthapa/AniGen1/refs/heads/master/AnimeReccSystem/AnimeReccSystem/all_anime_in_one.jpg").drop_duplicates()
     final = pd.merge(anime, ratings, on="anime_id", suffixes=[None, "_user"])
     final = final.rename(columns={"rating_user": "user_rating"})
     return anime, final
